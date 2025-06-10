@@ -7,3 +7,8 @@ function findTopper (marks) {
 }
 
 console.log(findTopper(marks));
+
+// ... unpack
+// function findMax (marks){
+//  return Math.max(...marks);
+// }

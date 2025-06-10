@@ -32,3 +32,7 @@ const totalmarks = (marks) => {
 }
 
 console.log(totalmarks(marks));
+
+// const totalmarks = marks.reduce((total, marks) => {
+//     return total + marks;   
+// });
