@@ -15,3 +15,5 @@ function processPayment(paymentInfo) {
     }
 }
 processPayment("1234-5678-9012-3456");
+
+// use promise here not if else or random
