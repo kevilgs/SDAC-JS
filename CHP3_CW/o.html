@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <input type="text" id="input"/>
+    <button id="btn">Submit</button>
+
+    <ol id="ol">
+                <li>Kevil</li>
+                <li>Soham</li>
+                <li>Tejas</li>
+            </ol>
+    <script>
+        const btn = document.getElementById("btn");
+        btn.addEventListener("click",()=>{
+            // alert("Hello World");
+             const input = document.getElementById("input");
+                const ol = document.getElementById("ol");
+                const li = document.createElement("li");
+                 li.innerText = input.value;
+                ol.append(li);
+                localStorage.setItem("li",input.value);
+        })
+    </script>
+</body>
+</html>
