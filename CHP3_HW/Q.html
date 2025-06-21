@@ -1,0 +1,52 @@
+<!-- using onDblClick,Keyboard Press and using getElementsByClassName -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+    <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    <script src ="../node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <title>Yayy</title>
+ </head>
+ <body>
+    <button id="btn" class="mx-5 my-5 btn btn-primary">Click On Me !</button>
+    <input type="text" id="input" class="mx-5 my-5 form-control col-4" placeholder="Type something...">
+    <script>
+    document.getElementById("btn").addEventListener("click", () => {
+        Swal.fire({
+            title: 'Hello World!',
+            text: 'This is a much nicer alert!',
+            icon: 'info',
+            confirmButtonText: 'Cool'
+        });
+    });
+    document.getElementById("input").addEventListener("keydown", (event) => {
+        if (event.key === "") {
+            Swal.fire({
+                title: 'You typed:',
+                text: event.target.value,
+                icon: 'success',
+                confirmButtonText: 'Got it!'
+            });
+        }
+    });
+</script>
+    
+ </body>
+ </html>
