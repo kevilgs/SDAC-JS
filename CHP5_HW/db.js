@@ -1,7 +1,7 @@
 import { createClient } from '@supabase/supabase-js'
 
-const supabaseUrl = 'https://eoapxnpxpzwuagkfvokh.supabase.co'
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVvYXB4bnB4cHp3dWFna2Z2b2toIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTA5NDYyMTIsImV4cCI6MjA2NjUyMjIxMn0.6FMWk9XXfeabGHWqcWLnRnN3i3UwH0NfyGTP1PPqUuY'
+import { supabaseUrl, supabaseKey } from './.env.js'
+
 const supabase = createClient(supabaseUrl, supabaseKey)
 
 async function addProduct(name, price) {
